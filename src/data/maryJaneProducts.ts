@@ -1,16 +1,57 @@
-// Mary Jane specific images
-import maryJaneFlatImg from "@/assets/mary-jane-flat.png";
-import maryJaneBlockHeelImg from "@/assets/mary-jane-block-heel.png";
-import maryJanePlatformImg from "@/assets/mary-jane-platform.png";
-import maryJaneHighHeelImg from "@/assets/mary-jane-high-heel.png";
-import maryJaneSquareToeImg from "@/assets/mary-jane-square-toe.png";
-import maryJaneChunkyImg from "@/assets/mary-jane-chunky.png";
-import maryJaneBalletImg from "@/assets/mary-jane-ballet.png";
-import maryJaneMetallicImg from "@/assets/mary-jane-metallic.png";
-// Existing mary jane images
-import maryJanesImg from "@/assets/mary-janes.png";
-import maryJanesImg2 from "@/assets/mary-janes-2.png";
-import maryJanesImg3 from "@/assets/mary-janes-3.png";
+// Mary Jane specific images - 54 unique styles
+import mjBlackPatentBlock from "@/assets/mary-jane-styles/mj-black-patent-block.png";
+import mjRedSuedeLow from "@/assets/mary-jane-styles/mj-red-suede-low.png";
+import mjNudeFlatDouble from "@/assets/mary-jane-styles/mj-nude-flat-double.png";
+import mjWhitePlatform from "@/assets/mary-jane-styles/mj-white-platform.png";
+import mjPinkBallet from "@/assets/mary-jane-styles/mj-pink-ballet.png";
+import mjSilverPointed from "@/assets/mary-jane-styles/mj-silver-pointed.png";
+import mjNavyVelvet from "@/assets/mary-jane-styles/mj-navy-velvet.png";
+import mjBurgundyHigh from "@/assets/mary-jane-styles/mj-burgundy-high.png";
+import mjGoldPlatform from "@/assets/mary-jane-styles/mj-gold-platform.png";
+import mjCreamBridal from "@/assets/mary-jane-styles/mj-cream-bridal.png";
+import mjGreenLug from "@/assets/mary-jane-styles/mj-green-lug.png";
+import mjBrownLoafer from "@/assets/mary-jane-styles/mj-brown-loafer.png";
+import mjBlushStiletto from "@/assets/mary-jane-styles/mj-blush-stiletto.png";
+import mjOliveTstrap from "@/assets/mary-jane-styles/mj-olive-tstrap.png";
+import mjCoralBlock from "@/assets/mary-jane-styles/mj-coral-block.png";
+import mjLavenderPlatform from "@/assets/mary-jane-styles/mj-lavender-platform.png";
+import mjTaupeWedge from "@/assets/mary-jane-styles/mj-taupe-wedge.png";
+import mjRosegoldAnkle from "@/assets/mary-jane-styles/mj-rosegold-ankle.png";
+import mjChampagneKitten from "@/assets/mary-jane-styles/mj-champagne-kitten.png";
+import mjBlackChunky from "@/assets/mary-jane-styles/mj-black-chunky.png";
+import mjCherryPump from "@/assets/mary-jane-styles/mj-cherry-pump.png";
+import mjTanOxford from "@/assets/mary-jane-styles/mj-tan-oxford.png";
+import mjWhiteSchool from "@/assets/mary-jane-styles/mj-white-school.png";
+import mjHotpinkPlatform from "@/assets/mary-jane-styles/mj-hotpink-platform.png";
+import mjBronzeBlock from "@/assets/mary-jane-styles/mj-bronze-block.png";
+import mjMidnightVelvet from "@/assets/mary-jane-styles/mj-midnight-velvet.png";
+import mjPearlBridal from "@/assets/mary-jane-styles/mj-pearl-bridal.png";
+import mjEmeraldSatin from "@/assets/mary-jane-styles/mj-emerald-satin.png";
+import mjDustyroseBow from "@/assets/mary-jane-styles/mj-dustyrose-bow.png";
+import mjCaramelWood from "@/assets/mary-jane-styles/mj-caramel-wood.png";
+import mjCobaltPump from "@/assets/mary-jane-styles/mj-cobalt-pump.png";
+import mjMintFlat from "@/assets/mary-jane-styles/mj-mint-flat.png";
+import mjPlumVelvet from "@/assets/mary-jane-styles/mj-plum-velvet.png";
+import mjPeachSatin from "@/assets/mary-jane-styles/mj-peach-satin.png";
+import mjCharcoalPlatform from "@/assets/mary-jane-styles/mj-charcoal-platform.png";
+import mjIvoryElegant from "@/assets/mary-jane-styles/mj-ivory-elegant.png";
+import mjTealChunky from "@/assets/mary-jane-styles/mj-teal-chunky.png";
+import mjMauvePointed from "@/assets/mary-jane-styles/mj-mauve-pointed.png";
+import mjOxbloodOxford from "@/assets/mary-jane-styles/mj-oxblood-oxford.png";
+import mjLilacPlatform from "@/assets/mary-jane-styles/mj-lilac-platform.png";
+import mjMustardBlock from "@/assets/mary-jane-styles/mj-mustard-block.png";
+import mjCopperAnkle from "@/assets/mary-jane-styles/mj-copper-ankle.png";
+import mjSageDouble from "@/assets/mary-jane-styles/mj-sage-double.png";
+import mjTerracottaWood from "@/assets/mary-jane-styles/mj-terracotta-wood.png";
+import mjBabyblueKitten from "@/assets/mary-jane-styles/mj-babyblue-kitten.png";
+import mjChocolateWedge from "@/assets/mary-jane-styles/mj-chocolate-wedge.png";
+import mjRaspberrySquare from "@/assets/mary-jane-styles/mj-raspberry-square.png";
+import mjSlateLug from "@/assets/mary-jane-styles/mj-slate-lug.png";
+import mjApricotBow from "@/assets/mary-jane-styles/mj-apricot-bow.png";
+import mjGunmetalPump from "@/assets/mary-jane-styles/mj-gunmetal-pump.png";
+import mjSeafoamLow from "@/assets/mary-jane-styles/mj-seafoam-low.png";
+import mjMaroonThick from "@/assets/mary-jane-styles/mj-maroon-thick.png";
+import mjSandEspadrille from "@/assets/mary-jane-styles/mj-sand-espadrille.png";
 
 // ============== TYPES ==============
 
@@ -163,7 +204,7 @@ export const trendingCollections: TrendCollection[] = [
     slug: "platform-mary-janes",
     filterKey: "soleStyles",
     filterValue: "platform",
-    image: maryJanePlatformImg,
+    image: mjWhitePlatform,
   },
   {
     id: "chunky",
@@ -172,7 +213,7 @@ export const trendingCollections: TrendCollection[] = [
     slug: "chunky-mary-janes",
     filterKey: "soleStyles",
     filterValue: "chunky-lug",
-    image: maryJaneChunkyImg,
+    image: mjBlackChunky,
   },
   {
     id: "square-toe",
@@ -181,7 +222,7 @@ export const trendingCollections: TrendCollection[] = [
     slug: "square-toe-mary-janes",
     filterKey: "toeShapes",
     filterValue: "square",
-    image: maryJaneSquareToeImg,
+    image: mjRaspberrySquare,
   },
   {
     id: "double-strap",
@@ -190,7 +231,7 @@ export const trendingCollections: TrendCollection[] = [
     slug: "double-strap-mary-janes",
     filterKey: "strapDesigns",
     filterValue: "double",
-    image: maryJaneBlockHeelImg,
+    image: mjSageDouble,
   },
   {
     id: "ballet-core",
@@ -199,7 +240,7 @@ export const trendingCollections: TrendCollection[] = [
     slug: "ballet-core-mary-janes",
     filterKey: "heelTypes",
     filterValue: "flat",
-    image: maryJaneBalletImg,
+    image: mjPinkBallet,
   },
   {
     id: "patent-leather",
@@ -208,7 +249,7 @@ export const trendingCollections: TrendCollection[] = [
     slug: "patent-leather-mary-janes",
     filterKey: "materials",
     filterValue: "patent-leather",
-    image: maryJaneHighHeelImg,
+    image: mjBlackPatentBlock,
   },
   {
     id: "metallic",
@@ -217,7 +258,7 @@ export const trendingCollections: TrendCollection[] = [
     slug: "metallic-mary-janes",
     filterKey: "colors",
     filterValue: ["Silver", "Gold", "Rose Gold"],
-    image: maryJaneMetallicImg,
+    image: mjGoldPlatform,
   },
   {
     id: "comfort",
@@ -226,7 +267,7 @@ export const trendingCollections: TrendCollection[] = [
     slug: "comfort-mary-janes",
     filterKey: "audiences",
     filterValue: "comfort",
-    image: maryJaneFlatImg,
+    image: mjNudeFlatDouble,
   },
 ];
 
@@ -266,18 +307,95 @@ export const initialFilters: MaryJaneFilters = {
   sortBy: "newest",
 };
 
-// ============== IMAGE MAPPING ==============
+// ============== 54 UNIQUE IMAGE ARRAY ==============
 
+const allMaryJaneImages: string[] = [
+  mjBlackPatentBlock,
+  mjRedSuedeLow,
+  mjNudeFlatDouble,
+  mjWhitePlatform,
+  mjPinkBallet,
+  mjSilverPointed,
+  mjNavyVelvet,
+  mjBurgundyHigh,
+  mjGoldPlatform,
+  mjCreamBridal,
+  mjGreenLug,
+  mjBrownLoafer,
+  mjBlushStiletto,
+  mjOliveTstrap,
+  mjCoralBlock,
+  mjLavenderPlatform,
+  mjTaupeWedge,
+  mjRosegoldAnkle,
+  mjChampagneKitten,
+  mjBlackChunky,
+  mjCherryPump,
+  mjTanOxford,
+  mjWhiteSchool,
+  mjHotpinkPlatform,
+  mjBronzeBlock,
+  mjMidnightVelvet,
+  mjPearlBridal,
+  mjEmeraldSatin,
+  mjDustyroseBow,
+  mjCaramelWood,
+  mjCobaltPump,
+  mjMintFlat,
+  mjPlumVelvet,
+  mjPeachSatin,
+  mjCharcoalPlatform,
+  mjIvoryElegant,
+  mjTealChunky,
+  mjMauvePointed,
+  mjOxbloodOxford,
+  mjLilacPlatform,
+  mjMustardBlock,
+  mjCopperAnkle,
+  mjSageDouble,
+  mjTerracottaWood,
+  mjBabyblueKitten,
+  mjChocolateWedge,
+  mjRaspberrySquare,
+  mjSlateLug,
+  mjApricotBow,
+  mjGunmetalPump,
+  mjSeafoamLow,
+  mjMaroonThick,
+  mjSandEspadrille,
+];
+
+// Style-specific image mapping for more variety
 const styleImages: Record<string, string[]> = {
-  "flat": [maryJaneFlatImg, maryJaneBalletImg, maryJanesImg],
-  "low-heel": [maryJaneSquareToeImg, maryJanesImg2, maryJanesImg3],
-  "block-heel": [maryJaneBlockHeelImg, maryJanesImg2, maryJanesImg3],
-  "high-heel": [maryJaneHighHeelImg, maryJanesImg, maryJanesImg2],
-  "platform": [maryJanePlatformImg, maryJanesImg, maryJanesImg3],
-  "chunky-lug": [maryJaneChunkyImg, maryJanesImg2, maryJanesImg],
-  "metallic": [maryJaneMetallicImg, maryJanesImg3, maryJanesImg],
-  "ballet": [maryJaneBalletImg, maryJaneFlatImg, maryJanesImg],
-  "default": [maryJanesImg, maryJanesImg2, maryJanesImg3],
+  // Heel types
+  "flat": [mjNudeFlatDouble, mjPinkBallet, mjMintFlat, mjApricotBow, mjDustyroseBow, mjSageDouble, mjOliveTstrap],
+  "low-heel": [mjRedSuedeLow, mjNavyVelvet, mjChampagneKitten, mjBabyblueKitten, mjSeafoamLow, mjPeachSatin],
+  "block-heel": [mjBlackPatentBlock, mjCoralBlock, mjBronzeBlock, mjMustardBlock, mjPlumVelvet, mjIvoryElegant, mjTealChunky, mjMidnightVelvet],
+  "high-heel": [mjBurgundyHigh, mjBlushStiletto, mjCherryPump, mjGunmetalPump, mjCobaltPump, mjMauvePointed, mjSilverPointed, mjCopperAnkle, mjRosegoldAnkle],
+  
+  // Sole styles
+  "platform": [mjWhitePlatform, mjGoldPlatform, mjLavenderPlatform, mjHotpinkPlatform, mjCharcoalPlatform, mjLilacPlatform],
+  "chunky-lug": [mjBlackChunky, mjGreenLug, mjSlateLug, mjMaroonThick, mjTerracottaWood, mjWhiteSchool],
+  "classic": [mjBlackPatentBlock, mjRedSuedeLow, mjNudeFlatDouble, mjNavyVelvet, mjChampagneKitten],
+  
+  // Toe shapes
+  "pointed": [mjSilverPointed, mjMauvePointed, mjGunmetalPump, mjCherryPump, mjBurgundyHigh],
+  "square": [mjRaspberrySquare, mjMidnightVelvet, mjPlumVelvet],
+  "round": [mjPinkBallet, mjNudeFlatDouble, mjCoralBlock, mjMintFlat],
+  
+  // Materials
+  "patent-leather": [mjBlackPatentBlock, mjCherryPump, mjLavenderPlatform, mjHotpinkPlatform, mjCobaltPump],
+  "suede": [mjRedSuedeLow, mjNavyVelvet, mjPlumVelvet, mjChocolateWedge, mjOliveTstrap],
+  "leather": [mjBrownLoafer, mjTanOxford, mjOxbloodOxford, mjCaramelWood, mjTealChunky, mjGreenLug],
+  "satin": [mjPinkBallet, mjCreamBridal, mjPearlBridal, mjEmeraldSatin, mjPeachSatin, mjApricotBow],
+  
+  // Colors
+  "metallic": [mjSilverPointed, mjGoldPlatform, mjRosegoldAnkle, mjBronzeBlock, mjCopperAnkle, mjGunmetalPump],
+  "bridal": [mjCreamBridal, mjPearlBridal, mjIvoryElegant, mjChampagneKitten],
+  "neutral": [mjNudeFlatDouble, mjTaupeWedge, mjSandEspadrille, mjBrownLoafer, mjCaramelWood],
+  
+  // Default fallback
+  "default": allMaryJaneImages,
 };
 
 // ============== PRODUCT GENERATION ==============
@@ -376,15 +494,27 @@ function generateMaryJaneProducts(): MaryJaneProduct[] {
     const heelTypeLabel = heelTypeOptions.find(h => h.value === heelType)?.label || "Mary Jane";
     const subcategory = `${heelTypeLabel} Mary Janes`;
     
-    // Get image based on style
-    let imageKey: string = heelType;
-    if (soleStyle === "platform") imageKey = "platform";
-    if (soleStyle === "chunky-lug") imageKey = "chunky-lug";
-    if (["Silver", "Gold", "Rose Gold"].includes(color)) imageKey = "metallic";
-    if ((heelType === "flat" && color === "Pink") || color === "Blush") imageKey = "ballet";
+    // Select image based on multiple criteria for maximum variety
+    // Use product ID to ensure unique distribution
+    const imageIndex = id % allMaryJaneImages.length;
+    const mainImage = allMaryJaneImages[imageIndex];
     
-    const images = styleImages[imageKey] || styleImages.default;
-    const image = images[Math.floor(random() * images.length)];
+    // Get style-specific images for gallery
+    const heelImages = styleImages[heelType] || [];
+    const soleImages = styleImages[soleStyle] || [];
+    const materialImages = styleImages[material] || [];
+    
+    // Create unique image set for this product
+    const uniqueImages = new Set<string>([mainImage]);
+    [...heelImages, ...soleImages, ...materialImages].forEach(img => {
+      if (uniqueImages.size < 4) uniqueImages.add(img);
+    });
+    // Fill remaining slots with random images
+    while (uniqueImages.size < 4) {
+      const randImg = allMaryJaneImages[Math.floor(random() * allMaryJaneImages.length)];
+      uniqueImages.add(randImg);
+    }
+    const images = Array.from(uniqueImages);
     
     // Available sizes - ensure good distribution of all sizes
     const availableSizes = sizeOptions.filter(() => random() > 0.15);
@@ -395,8 +525,8 @@ function generateMaryJaneProducts(): MaryJaneProduct[] {
       brand,
       price: basePrice,
       originalPrice,
-      image,
-      images, // All images for this style
+      image: mainImage,
+      images, // Multiple images for product detail
       category: "Mary Jane Shoes",
       subcategory,
       gender: "women", // All Mary Janes are women's shoes
@@ -469,7 +599,7 @@ export function filterMaryJaneProducts(
     
     // Occasions
     if (filters.occasions.length > 0) {
-      const hasOccasion = filters.occasions.some(o => product.occasion.includes(o));
+      const hasOccasion = filters.occasions.some((occ) => product.occasion.includes(occ));
       if (!hasOccasion) return false;
     }
     
@@ -485,7 +615,7 @@ export function filterMaryJaneProducts(
     
     // Collections
     if (filters.collections.length > 0) {
-      const hasCollection = filters.collections.some(c => product.collection.includes(c));
+      const hasCollection = filters.collections.some((col) => product.collection.includes(col));
       if (!hasCollection) return false;
     }
     
@@ -496,7 +626,7 @@ export function filterMaryJaneProducts(
     
     // Sizes
     if (filters.sizes.length > 0) {
-      const hasSize = filters.sizes.some(s => product.sizes.includes(s));
+      const hasSize = filters.sizes.some((size) => product.sizes.includes(size));
       if (!hasSize) return false;
     }
     
@@ -515,45 +645,45 @@ export function filterMaryJaneProducts(
     return true;
   });
   
-  // Sort
+  // Sorting
   switch (filters.sortBy) {
     case "price-low":
-      filtered.sort((a, b) => a.price - b.price);
+      filtered = filtered.sort((a, b) => a.price - b.price);
       break;
     case "price-high":
-      filtered.sort((a, b) => b.price - a.price);
+      filtered = filtered.sort((a, b) => b.price - a.price);
       break;
     case "bestsellers":
-      filtered.sort((a, b) => (b.isBestSeller ? 1 : 0) - (a.isBestSeller ? 1 : 0));
+      filtered = filtered.sort((a, b) => (b.isBestSeller ? 1 : 0) - (a.isBestSeller ? 1 : 0));
       break;
     case "newest":
     default:
-      filtered.sort((a, b) => (b.isNew ? 1 : 0) - (a.isNew ? 1 : 0));
+      filtered = filtered.sort((a, b) => (b.isNew ? 1 : 0) - (a.isNew ? 1 : 0));
       break;
   }
   
   return filtered;
 }
 
-// ============== URL HELPERS ==============
+// ============== URL PARAMS HELPERS ==============
 
 export function filtersToSearchParams(filters: MaryJaneFilters): URLSearchParams {
   const params = new URLSearchParams();
   
-  if (filters.search) params.set("q", filters.search);
-  if (filters.heelTypes.length) params.set("heel", filters.heelTypes.join(","));
-  if (filters.soleStyles.length) params.set("sole", filters.soleStyles.join(","));
-  if (filters.strapDesigns.length) params.set("strap", filters.strapDesigns.join(","));
-  if (filters.toeShapes.length) params.set("toe", filters.toeShapes.join(","));
-  if (filters.occasions.length) params.set("occasion", filters.occasions.join(","));
-  if (filters.materials.length) params.set("material", filters.materials.join(","));
-  if (filters.audiences.length) params.set("audience", filters.audiences.join(","));
-  if (filters.collections.length) params.set("collection", filters.collections.join(","));
-  if (filters.colors.length) params.set("color", filters.colors.join(","));
+  if (filters.search) params.set("search", filters.search);
+  if (filters.heelTypes.length) params.set("heelTypes", filters.heelTypes.join(","));
+  if (filters.soleStyles.length) params.set("soleStyles", filters.soleStyles.join(","));
+  if (filters.strapDesigns.length) params.set("strapDesigns", filters.strapDesigns.join(","));
+  if (filters.toeShapes.length) params.set("toeShapes", filters.toeShapes.join(","));
+  if (filters.occasions.length) params.set("occasions", filters.occasions.join(","));
+  if (filters.materials.length) params.set("materials", filters.materials.join(","));
+  if (filters.audiences.length) params.set("audiences", filters.audiences.join(","));
+  if (filters.collections.length) params.set("collections", filters.collections.join(","));
+  if (filters.colors.length) params.set("colors", filters.colors.join(","));
   if (filters.sizes.length) params.set("size", filters.sizes.join(","));
-  if (filters.widths.length) params.set("width", filters.widths.join(","));
+  if (filters.widths.length) params.set("widths", filters.widths.join(","));
   if (filters.priceRange) params.set("price", `${filters.priceRange.min}-${filters.priceRange.max}`);
-  if (filters.sortBy !== "newest") params.set("sort", filters.sortBy);
+  if (filters.sortBy !== "newest") params.set("sortBy", filters.sortBy);
   
   return params;
 }
@@ -561,50 +691,50 @@ export function filtersToSearchParams(filters: MaryJaneFilters): URLSearchParams
 export function searchParamsToFilters(params: URLSearchParams): Partial<MaryJaneFilters> {
   const filters: Partial<MaryJaneFilters> = {};
   
-  const q = params.get("q");
-  if (q) filters.search = q;
+  const search = params.get("search");
+  if (search) filters.search = search;
   
-  const heel = params.get("heel");
-  if (heel) filters.heelTypes = heel.split(",") as HeelType[];
+  const heelTypes = params.get("heelTypes");
+  if (heelTypes) filters.heelTypes = heelTypes.split(",") as HeelType[];
   
-  const sole = params.get("sole");
-  if (sole) filters.soleStyles = sole.split(",") as SoleStyle[];
+  const soleStyles = params.get("soleStyles");
+  if (soleStyles) filters.soleStyles = soleStyles.split(",") as SoleStyle[];
   
-  const strap = params.get("strap");
-  if (strap) filters.strapDesigns = strap.split(",") as StrapDesign[];
+  const strapDesigns = params.get("strapDesigns");
+  if (strapDesigns) filters.strapDesigns = strapDesigns.split(",") as StrapDesign[];
   
-  const toe = params.get("toe");
-  if (toe) filters.toeShapes = toe.split(",") as ToeShape[];
+  const toeShapes = params.get("toeShapes");
+  if (toeShapes) filters.toeShapes = toeShapes.split(",") as ToeShape[];
   
-  const occasion = params.get("occasion");
-  if (occasion) filters.occasions = occasion.split(",") as Occasion[];
+  const occasions = params.get("occasions");
+  if (occasions) filters.occasions = occasions.split(",") as Occasion[];
   
-  const material = params.get("material");
-  if (material) filters.materials = material.split(",") as Material[];
+  const materials = params.get("materials");
+  if (materials) filters.materials = materials.split(",") as Material[];
   
-  const audience = params.get("audience");
-  if (audience) filters.audiences = audience.split(",") as Audience[];
+  const audiences = params.get("audiences");
+  if (audiences) filters.audiences = audiences.split(",") as Audience[];
   
-  const collection = params.get("collection");
-  if (collection) filters.collections = collection.split(",") as Collection[];
+  const collections = params.get("collections");
+  if (collections) filters.collections = collections.split(",") as Collection[];
   
-  const color = params.get("color");
-  if (color) filters.colors = color.split(",");
+  const colors = params.get("colors");
+  if (colors) filters.colors = colors.split(",");
   
-  const size = params.get("size");
-  if (size) filters.sizes = size.split(",").map(Number);
+  const sizes = params.get("size");
+  if (sizes) filters.sizes = sizes.split(",").map(Number);
   
-  const width = params.get("width");
-  if (width) filters.widths = width.split(",") as Width[];
+  const widths = params.get("widths");
+  if (widths) filters.widths = widths.split(",") as Width[];
   
   const price = params.get("price");
   if (price) {
     const [min, max] = price.split("-").map(Number);
-    filters.priceRange = { min, max };
+    if (!isNaN(min) && !isNaN(max)) filters.priceRange = { min, max };
   }
   
-  const sort = params.get("sort");
-  if (sort) filters.sortBy = sort as MaryJaneFilters["sortBy"];
+  const sortBy = params.get("sortBy");
+  if (sortBy) filters.sortBy = sortBy as MaryJaneFilters["sortBy"];
   
   return filters;
 }
