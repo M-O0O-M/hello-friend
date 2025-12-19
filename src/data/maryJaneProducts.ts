@@ -21,8 +21,10 @@ export interface MaryJaneProduct {
   price: number;
   originalPrice?: number;
   image: string;
+  images?: string[]; // Multiple images for product detail
   category: string; // Main category - always "Mary Jane Shoes"
   subcategory: string; // Subcategory like "Flat Mary Janes"
+  gender: "women" | "men" | "unisex"; // Required for cart compatibility
   
   // Filter attributes
   heelType: HeelType;
@@ -47,6 +49,7 @@ export interface MaryJaneProduct {
   // SEO
   slug: string;
   description: string;
+  fullDescription?: string; // Longer description for product detail page
 }
 
 export type HeelType = "flat" | "low-heel" | "block-heel" | "high-heel";
@@ -393,8 +396,10 @@ function generateMaryJaneProducts(): MaryJaneProduct[] {
       price: basePrice,
       originalPrice,
       image,
+      images, // All images for this style
       category: "Mary Jane Shoes",
       subcategory,
+      gender: "women", // All Mary Janes are women's shoes
       heelType,
       soleStyle,
       strapDesign,
@@ -413,6 +418,7 @@ function generateMaryJaneProducts(): MaryJaneProduct[] {
       isLimitedEdition,
       slug: createSlug(name, id),
       description: `${brand} ${name} featuring ${strapDesign}-strap design with ${toeShape} toe and ${soleStyle} sole. Perfect for ${productOccasions.join(" and ")} occasions. Made from premium ${material.replace("-", " ")}.`,
+      fullDescription: `Discover the ${brand} ${name}, a stunning addition to our Mary Jane collection. This exquisite shoe features a ${strapDesign}-strap design that provides both style and secure fit. The ${toeShape} toe silhouette adds a ${toeShape === "pointed" ? "sophisticated" : toeShape === "square" ? "modern" : "classic"} touch, while the ${soleStyle} sole ensures ${soleStyle === "platform" ? "bold height and stability" : soleStyle === "chunky-lug" ? "durability and edge" : "timeless elegance"}.\n\nCrafted from premium ${material.replace("-", " ")}, this ${heelType === "flat" ? "comfortable flat" : heelType + " heel"} Mary Jane is perfect for ${productOccasions.join(" and ")} occasions. Available in ${width} width for the perfect fit.\n\n• ${strapDesign.charAt(0).toUpperCase() + strapDesign.slice(1)}-strap design\n• ${toeShape.charAt(0).toUpperCase() + toeShape.slice(1)} toe shape\n• ${soleStyle.charAt(0).toUpperCase() + soleStyle.slice(1)} sole construction\n• Premium ${material.replace("-", " ")} upper\n• Cushioned insole for all-day comfort\n• Available in EU sizes ${(availableSizes.length > 0 ? availableSizes : [38, 39, 40]).join(", ")}`,
     });
     
     id++;
