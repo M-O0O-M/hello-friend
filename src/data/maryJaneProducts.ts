@@ -354,16 +354,16 @@ function generateMaryJaneProducts(): MaryJaneProduct[] {
     const isLimitedEdition = collections.includes("limited-edition");
     const isSale = !isNew && random() < 0.25;
     
-    // Price based on heel type and material
-    let basePrice = 80;
-    if (heelType === "high-heel") basePrice += 40;
-    if (heelType === "block-heel") basePrice += 25;
-    if (soleStyle === "platform") basePrice += 35;
-    if (soleStyle === "chunky-lug") basePrice += 30;
-    if (material === "leather" || material === "patent-leather") basePrice += 50;
-    if (material === "suede") basePrice += 30;
-    if (isLimitedEdition) basePrice += 60;
-    basePrice += Math.floor(random() * 80);
+    // Price based on heel type and material - varied distribution
+    let basePrice = 45 + Math.floor(random() * 40); // Start between $45-85
+    if (heelType === "high-heel") basePrice += 20;
+    if (heelType === "block-heel") basePrice += 10;
+    if (soleStyle === "platform") basePrice += 15;
+    if (soleStyle === "chunky-lug") basePrice += 12;
+    if (material === "leather" || material === "patent-leather") basePrice += 25;
+    if (material === "suede") basePrice += 15;
+    if (isLimitedEdition) basePrice += 40;
+    basePrice += Math.floor(random() * 50);
     
     const originalPrice = isSale ? Math.floor(basePrice * (1.3 + random() * 0.3)) : undefined;
     
@@ -386,8 +386,8 @@ function generateMaryJaneProducts(): MaryJaneProduct[] {
     const images = styleImages[imageKey] || styleImages.default;
     const image = images[Math.floor(random() * images.length)];
     
-    // Available sizes
-    const availableSizes = sizeOptions.filter(() => random() > 0.2);
+    // Available sizes - ensure good distribution of all sizes
+    const availableSizes = sizeOptions.filter(() => random() > 0.15);
     
     products.push({
       id: id,
